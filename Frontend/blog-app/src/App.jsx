@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -8,26 +6,35 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main>
+        <header>
+          <a href="" className='logo'>My Blog</a>
+          <nav>
+            <a href="">Login</a>
+            <a href="">Register</a>
+          </nav>
+        </header>
+        <div className='posts'>
+          <div className="post">
+            
+            <a href=''>India approves $15B in semiconductor plant investments</a>
+            <p>India has approved allocating up to $15.2 billion (1.26 trillion Indian rupees) to build three new semiconductor plants, including its first semiconductor fab facility — part of the country’s big bid to take on China, Taiwan and other countries in the chip race. </p>
+            <img src="https://techcrunch.com/wp-content/uploads/2024/02/india-semiconductor-manufacturing-getty.jpg?w=430&h=230&crop=1" alt="" />
+          </div>
+          <div className="post">
+            
+            <a href=''>India approves $15B in semiconductor plant investments</a>
+            <p>India has approved allocating up to $15.2 billion (1.26 trillion Indian rupees) to build three new semiconductor plants, including its first semiconductor fab facility — part of the country’s big bid to take on China, Taiwan and other countries in the chip race. </p>
+            <img src="https://techcrunch.com/wp-content/uploads/2024/02/india-semiconductor-manufacturing-getty.jpg?w=430&h=230&crop=1" alt="" />
+          </div>
+          <div className="post">
+            
+            <a href=''>India approves $15B in semiconductor plant investments</a>
+            <p>India has approved allocating up to $15.2 billion (1.26 trillion Indian rupees) to build three new semiconductor plants, including its first semiconductor fab facility — part of the country’s big bid to take on China, Taiwan and other countries in the chip race. </p>
+            <img src="https://techcrunch.com/wp-content/uploads/2024/02/india-semiconductor-manufacturing-getty.jpg?w=430&h=230&crop=1" alt="" />
+          </div>
+        </div>
+      </main>
     </>
   )
 }
