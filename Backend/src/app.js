@@ -8,15 +8,29 @@ app.use(cors({
     credentials:true
 }))
 app.use(express.json({
-    limit:"16kb"
+    limit:"10mb"
 }))
 app.use(urlencoded({
     extended:true,
-    limit:'16kb'
+    limit:'10mb'
 }))
 app.use(express.static("public"))
 app.use(cookieParser())
 
+// app.post("/register",(req,res)=>{
+//     console.log(req.body)
+//     res.json(req.body);
+// })
+// app.get('/' ,(req,res)=>{
+//     res.json(req.body);
+// })
+
+// All the routes are here
+import router from './routes/user.route.js'
+app.use('/api',router);
+
+import blogRouter from './routes/blog.route.js'
+app.use('/api/blog',blogRouter);
 
 
 export{app};

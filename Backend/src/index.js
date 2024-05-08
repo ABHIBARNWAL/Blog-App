@@ -8,6 +8,6 @@ connectDB()
     })
 })
 .catch((err)=>{
-    console.log("Mongo DB connection failed !!")
+    console.log("Mongo DB connection failed !!",err)
     process.exit(1)
 })

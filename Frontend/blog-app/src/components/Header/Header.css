@@ -1,0 +1,20 @@
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer{
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  
+}
+.navContainer a{
+  text-decoration: none;
+  color: blueviolet;
+}
+.navContainerRight{
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,27 @@
+.newBlog{
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 2em;
+}
+.newBlog input[type="text"]{
+    width: 990px;
+    margin:4px 8px;
+    font-size: 0.6em;
+    padding: 4px 4px 0px;
+}
+.newBlog input[type="file"],
+.newBlogTextArea, .newBlogButton{
+    width: 1000px;
+    margin: 4px 0px;
+    font-size: 0.6em;
+}
+.newBlogButton{
+    color: whitesmoke;
+    background-color: rgb(58, 58, 58);
+    padding: 8px 0px;
+}

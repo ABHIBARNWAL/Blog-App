@@ -1,0 +1,46 @@
+.registerForm
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.registerForm form
+{
+    border: 1px solid;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:40px 20px;
+    box-shadow: 0px 0.5px 0.5px 1px blueviolet;
+    background-color: rgb(221, 186, 255);
+    font-size: 1.4rem;
+}
+.register-name, .register-email ,.register-username, .register-password,.register-phonenum,.register-confirmpassword{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    font-weight: bold;
+}
+
+.register-name input, .register-email input,.register-username input, .register-password input,.register-phonenum input,.register-confirmpassword input,.register-button {
+    padding: 4px 8px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 8px;
+}
+.register-name input:hover, .register-email input:hover,.register-username input:hover, .register-password input:hover,.register-phonenum input:hover,.register-confirmpassword input:hover,.register-button:hover {
+    border: 1px solid blueviolet;
+}
+.register-name input:focus, .register-email input:focus, .register-username input:focus, .register-password input:focus,.register-phonenum input:focus,.register-confirmpassword input:focus {
+    outline: none;
+}
+
+.register-name input::placeholder, .register-email input::placeholder, .register-username input::placeholder, .register-password input::placeholder,.register-phonenum input::placeholder,.register-confirmpassword input::placeholder {
+    opacity: 0.5;
+}
+.register-button{
+    background-color: blueviolet;
+    border: none;
+    border-radius: 8px;
+}
